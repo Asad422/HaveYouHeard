@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   // Colors
-  static const Color primary = Color(0xFF1DB954);    // Spotify green
+  static const Color primary = Color(0xFF1ED760);    // Spotify green
   static const Color background = Color(0xFF121212); // Тёмный фон
   static const Color surface = Color(0xFF1E1E1E);    // Карточки
   static const Color surfaceLight = Color(0xFF2A2A2A);

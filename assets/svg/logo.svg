@@ -1,0 +1,25 @@
+<svg width="100%" viewBox="0 0 690 410" role="img" style="" xmlns="http://www.w3.org/2000/svg">
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">HaveYouHeard logo with wave</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">HYH логотип со звуковой волной</desc>
+
+  
+
+  <rect width="680" height="400" rx="20" style="fill:rgb(18, 18, 18);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- главный текст -->
+  <text x="340" y="200" text-anchor="middle" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, sans-serif;font-size:72px;font-weight:500;text-anchor:middle;dominant-baseline:auto">HYH</text>
+
+  <!-- звуковая волна под текстом — основная -->
+  <polyline points="&#10;    100,270&#10;    115,255&#10;    125,285&#10;    140,240&#10;    155,300&#10;    170,230&#10;    185,295&#10;    200,248&#10;    215,278&#10;    230,258&#10;    245,272&#10;    260,262&#10;    275,268&#10;    290,264&#10;    305,267&#10;    320,265&#10;    340,265&#10;    355,265&#10;    370,267&#10;    385,264&#10;    400,268&#10;    415,262&#10;    430,272&#10;    445,258&#10;    460,278&#10;    475,248&#10;    490,295&#10;    505,230&#10;    520,300&#10;    535,240&#10;    550,285&#10;    565,255&#10;    580,270&#10;  " style="fill:none;stroke:rgb(29, 185, 84);color:rgb(255, 255, 255);stroke-width:2.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- волна фоновая — тише -->
+  <polyline points="&#10;    100,270&#10;    120,260&#10;    145,278&#10;    170,255&#10;    195,280&#10;    220,262&#10;    245,274&#10;    270,265&#10;    295,270&#10;    320,267&#10;    340,267&#10;    360,267&#10;    385,270&#10;    410,265&#10;    435,274&#10;    460,262&#10;    485,280&#10;    510,255&#10;    535,278&#10;    560,260&#10;    580,270&#10;  " style="fill:none;stroke:rgb(29, 185, 84);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:0.4;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- подпись -->
+  <text x="340" y="330" text-anchor="middle" style="fill:rgb(29, 185, 84);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">HAVE YOU HEARD</text>
+
+  <!-- три точки -->
+  <circle cx="316" cy="350" r="3" style="fill:rgb(29, 185, 84);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="340" cy="350" r="3" style="fill:rgb(29, 185, 84);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="364" cy="350" r="3" style="fill:rgb(29, 185, 84);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+</svg>

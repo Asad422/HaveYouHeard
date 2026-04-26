@@ -1,0 +1,3 @@
+class SpotifyTokenStore {
+  String? accessToken;
+}

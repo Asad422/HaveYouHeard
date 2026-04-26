@@ -8,15 +8,17 @@ part 'auth_state.dart';
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   final SpotifyAuthService spotifyAuthService;
   AuthBloc(this.spotifyAuthService) : super(AuthInitial()) {
-    on<LoginWithSpotifyEvent>((event, emit) async{
+    on<LoginWithSpotifyEvent>((event, emit) async {
       emit(AuthLoading());
       final result = await spotifyAuthService.loginWithSpotify();
 
-      if(result != null){
+      if (result != null) {
         emit(AuthSuccess());
+      } else {
+        emit(const AuthFailure(error: "Something went wrong"));
+        await Future.delayed(const Duration(seconds: 2));
+        emit(AuthInitial());
       }
-      emit(AuthFailure(error: "Something went wrong"));
-      Future.delayed(Duration(seconds: 2),()=> emit(AuthInitial()));
     });
   }
 }

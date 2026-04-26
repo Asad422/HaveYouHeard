@@ -10,9 +10,12 @@ class AppTheme {
   static const Color textSecondary = Color(0xFFB3B3B3);
   static const Color error = Color(0xFFE74C3C);
 
+  static const String fontFamily = 'Montserrat';
+
   static ThemeData get darkTheme => ThemeData(
         useMaterial3: true,
         brightness: Brightness.dark,
+        fontFamily: fontFamily,
         scaffoldBackgroundColor: background,
         primaryColor: primary,
         colorScheme: const ColorScheme.dark(

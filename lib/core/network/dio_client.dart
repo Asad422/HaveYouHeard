@@ -8,10 +8,19 @@ class DioClient {
     SpotifyAuthService authService,
   ) {
     final dio = Dio(BaseOptions(
+      baseUrl: "https://api.spotify.com/v1",
       connectTimeout: const Duration(seconds: 10),
       receiveTimeout: const Duration(seconds: 10),
     ));
-    dio.interceptors.add(SpotifyInterceptor(tokenStore, authService, dio));
+    dio.interceptors.addAll([
+      SpotifyInterceptor(tokenStore, authService, dio),
+      LogInterceptor(
+        requestBody: true,
+        responseBody: true,
+        requestHeader: false,
+        responseHeader: false,
+      ),
+    ]);
     return dio;
   }
 }

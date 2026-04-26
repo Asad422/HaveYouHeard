@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:have_you_heard/core/di/service_locator.dart';
+import 'package:have_you_heard/core/router/app_router.dart';
 import 'package:have_you_heard/features/auth/presentation/bloc/auth_bloc.dart';
 import 'package:have_you_heard/features/auth/presentation/widgets/auth_button.dart';
 import 'package:have_you_heard/features/auth/presentation/widgets/slide_up_widget.dart';
@@ -16,7 +17,15 @@ class AuthPage extends StatelessWidget {
     return BlocProvider(
       create: (context) => AuthBloc(sl()),
       child: BlocListener<AuthBloc, AuthState>(
-        listener: (context, state) {},
+        listener: (context, state) {
+          switch (state) {
+            case AuthSuccess():
+              context.router.replaceAll([HomeRoute()]);
+            case AuthFailure():
+            case _:
+              break;
+          }
+        },
         child: Scaffold(
           body: Stack(
             fit: StackFit.expand,
@@ -28,9 +37,7 @@ class AuthPage extends StatelessWidget {
                   builder: (context, state) {
                     return AuthButton(
                         onPressed: () {
-                          context
-                              .read<AuthBloc>()
-                              .add(LoginWithSpotifyEvent());
+                          context.read<AuthBloc>().add(LoginWithSpotifyEvent());
                         },
                         isActive: state is! AuthLoading);
                   },

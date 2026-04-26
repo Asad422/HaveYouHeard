@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -31,7 +32,11 @@ class MyApp extends StatelessWidget {
       title: 'HaveYouHeard',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
-      routerConfig: _appRouter.config(),
+      routerConfig: _appRouter.config(
+        deepLinkBuilder: (_) => DeepLink(
+          [if (isLoggedIn) const HomeRoute() else const AuthRoute()],
+        ),
+      ),
     );
   }
 }

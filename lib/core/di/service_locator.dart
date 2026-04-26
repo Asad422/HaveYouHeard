@@ -3,6 +3,10 @@ import 'package:get_it/get_it.dart';
 import 'package:have_you_heard/features/game/data/ds/deezer_data_source.dart';
 import 'package:have_you_heard/features/game/data/ds/spotify_data_source.dart';
 import 'package:have_you_heard/features/game/domain/usecases/get_preview_url.dart';
+import 'package:have_you_heard/features/home/data/ds/user_data_soruce.dart';
+import 'package:have_you_heard/features/home/data/repositories/user_repository.dart';
+import 'package:have_you_heard/features/home/domain/repositories/user_repository.dart';
+import 'package:have_you_heard/features/home/domain/usecases/get_user.dart';
 import '../../features/auth/data/spotify_auth_service.dart';
 import '../../features/auth/data/spotify_auth_storage.dart';
 import '../../features/auth/data/spotify_token_store.dart';
@@ -44,4 +48,13 @@ Future<void> setupServiceLocator() async {
   // Use cases
   sl.registerLazySingleton(() => GetTopTracks(sl()));
   sl.registerLazySingleton(() => GetPreviewUrl(sl()));
+
+  // Home
+  sl.registerLazySingleton<UserDataSoruce>(
+    () => UserDataSoruceImpl(dio: sl()),
+  );
+  sl.registerLazySingleton<UserRepository>(
+    () => UserRepositoryImp(dataSource: sl()),
+  );
+  sl.registerLazySingleton(() => GetUser(repository: sl()));
 }

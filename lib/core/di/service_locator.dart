@@ -7,6 +7,7 @@ import 'package:have_you_heard/features/home/data/ds/user_data_soruce.dart';
 import 'package:have_you_heard/features/home/data/repositories/user_repository.dart';
 import 'package:have_you_heard/features/home/domain/repositories/user_repository.dart';
 import 'package:have_you_heard/features/home/domain/usecases/get_user.dart';
+import 'package:have_you_heard/features/home/domain/usecases/get_user_artist.dart';
 import '../../features/auth/data/spotify_auth_service.dart';
 import '../../features/auth/data/spotify_auth_storage.dart';
 import '../../features/auth/data/spotify_token_store.dart';
@@ -57,4 +58,5 @@ Future<void> setupServiceLocator() async {
     () => UserRepositoryImp(dataSource: sl()),
   );
   sl.registerLazySingleton(() => GetUser(repository: sl()));
+  sl.registerLazySingleton(() => GetUserArtist(repository: sl()));
 }

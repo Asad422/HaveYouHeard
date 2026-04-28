@@ -9,4 +9,6 @@ sealed class HomeEvent extends Equatable {
 
 class GetUserEvent extends HomeEvent{}
 
+class GetUserArtistsEvent extends HomeEvent{}
+
 class LogoutEvent extends HomeEvent{}

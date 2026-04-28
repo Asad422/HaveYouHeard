@@ -27,7 +27,7 @@ class SpotifyAuthService {
       'client_id': ApiConstants.spotifyClientId,
       'response_type': 'code',
       'redirect_uri': ApiConstants.spotifyRedirectUri,
-      'scope': 'user-read-private user-read-email user-top-read',
+      'scope': 'user-read-private user-read-email user-top-read user-follow-read',
     });
     try {
       final result = await FlutterWebAuth2.authenticate(
